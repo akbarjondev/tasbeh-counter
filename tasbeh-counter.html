@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Tasbeh Counter</title>
+</head>
+<body>
+	<div class="container">
+		<div id="box">0</div>
+		<div id="sum">0</div>
+		<button class="btn btn--count">Count</button>
+		<button class="btn btn--reset">R</button>
+	</div>
+
+	<script>
+		const btn = document.querySelector('.btn--count')
+		const btnReset = document.querySelector('.btn--reset')
+		let count = 0
+		let all = 0
+
+		btn.addEventListener('click', () => {
+			count++
+			all++
+			console.log(all)
+			if(count === 34) {
+				count = 1
+			}
+
+			box.textContent = count
+			sum.textContent = all
+		})
+
+		btnReset.addEventListener('click', () => {
+			count = 0
+			box.textContent = count
+		})
+	</script>
+</body>
+</html>

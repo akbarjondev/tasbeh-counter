@@ -1,0 +1,115 @@
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: url("./../font/Gilroy-Medium.woff2") format("woff2"),
+        url("./../font/Gilroy-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: url("./../font/Gilroy-Bold.woff2") format("woff2"),
+        url("./../font/Gilroy-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: url("./../font/Gilroy-ExtraBold.woff2") format("woff2"),
+        url("./../font/Gilroy-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: url("./../font/Gilroy-Regular.woff2") format("woff2"),
+        url("./../font/Gilroy-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: url("./../font/Gilroy-Light.woff2") format("woff2"),
+        url("./../font/Gilroy-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: url("./../font/Gilroy-SemiBold.woff2") format("woff2"),
+        url("./../font/Gilroy-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy", "Arial", sans-serif;
+    background-color: #434c5e;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#box {
+    color: #eceff4;
+    font-size: 180px;
+}
+
+#sum {
+    color: #eceff4;
+}
+
+.btn {
+    color: #eceff4;
+    background-color: #24292e;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    border: 2px solid #24292e;
+}
+
+.btn:active {
+    color: #24292e;
+    background-color: #eceff4;
+}
+
+.btn--count {
+    padding: 15px 35px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.btn--reset {
+    position: absolute;
+    bottom: 69%;
+    right: 42%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 18px;
+}
