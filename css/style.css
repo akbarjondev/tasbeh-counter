@@ -67,7 +67,6 @@ body {
 }
 
 .container {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,11 +75,19 @@ body {
 }
 
 #box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 210px;
     color: #eceff4;
     font-size: 180px;
 }
 
 #sum {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    font-size: 18px;
     color: #eceff4;
 }
 
@@ -106,10 +113,11 @@ body {
 
 .btn--reset {
     position: absolute;
-    bottom: 69%;
-    right: 42%;
+    top: 0%;
+    right: 0%;
     width: 30px;
     height: 30px;
     padding: 0;
     border-radius: 18px;
+    transform: translateX(50%);
 }

@@ -8,10 +8,12 @@
 </head>
 <body>
 	<div class="container">
-		<div id="box">0</div>
-		<div id="sum">0</div>
+		<div id="box">
+			<div id="counter">0</div>
+			<button class="btn btn--reset">R</button>
+			<div id="sum">0</div>
+		</div>
 		<button class="btn btn--count">Count</button>
-		<button class="btn btn--reset">R</button>
 	</div>
 
 	<script>
@@ -28,13 +30,15 @@
 				count = 1
 			}
 
-			box.textContent = count
+			counter.textContent = count
 			sum.textContent = all
 		})
 
 		btnReset.addEventListener('click', () => {
 			count = 0
-			box.textContent = count
+			all = 0
+			counter.textContent = count
+			sum.textContent = all
 		})
 	</script>
 </body>
