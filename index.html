@@ -41,11 +41,15 @@
 
 		let myStorage = window.localStorage;
 		
+		if(Number(myStorage.getItem('count')) > 0) {
+			count = Number(myStorage.getItem('count'))
+			all = Number(myStorage.getItem('all'))
+		}
+
+		counter.textContent = count
+		sum.textContent = all
+
 		btn.addEventListener('click', () => {
-			if((typeof myStorage.getItem('count')) == 'string') {
-				count = Number(myStorage.getItem('count'))
-				all = Number(myStorage.getItem('all'))
-			}
 
 			count++
 			all++
@@ -53,7 +57,7 @@
 			myStorage.setItem('count', count)
 			myStorage.setItem('all', all)
 
-			if(count === 34) {
+			if(count == 34 || count > 34) {
 				count = 1
 			}
 
@@ -62,6 +66,7 @@
 		})
 
 		btnReset.addEventListener('click', () => {
+			myStorage.clear()
 			count = 0
 			all = 0
 			counter.textContent = count
